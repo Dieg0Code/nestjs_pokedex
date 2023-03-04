@@ -6,6 +6,8 @@ import { Document } from 'mongoose';
 export class Pokemon extends Document {
   // Document es una interfaz de mongoose, nos permite usar los metodos de mongoose
   // id: string mongo lo añade automaticamente
+  // @Prop() es un decorador de mongoose, nos permite definir propiedades para los campos de la base de datos
+  // podemos definir propiedades como unique, index, required, etc
   @Prop({
     unique: true,
     index: true,
